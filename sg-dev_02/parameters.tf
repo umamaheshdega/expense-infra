@@ -17,8 +17,8 @@ resource "aws_ssm_parameter" "bastion_sg" {
 #   value = module.alb_ingress_sg.sg_id
 # }
 
-resource "aws_ssm_parameter" "vpn_sg_id" {
-  name  = "/${var.project_name}/${var.environment}/vpn_sg_id"
-  type  = "String"
-  value = module.vpn_sg.sg_id
-}
+# resource "aws_ssm_parameter" "vpn_sg_id" {
+#   name  = "/${var.project_name}/${var.environment}/vpn_sg_id"
+#   type  = "String"
+#   value = module.vpn_sg.sg_id
+# }

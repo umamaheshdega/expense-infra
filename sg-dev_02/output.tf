@@ -4,7 +4,7 @@ output "sg_ids" {
       module.backend_sg.sg_id,
       module.frontend_sg.sg_id,
       module.bastion_sg.sg_id,
-      module.vpn_sg.sg_id
+      # module.vpn_sg.sg_id
       
    ]
 }
