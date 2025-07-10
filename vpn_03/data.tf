@@ -1,0 +1,18 @@
+ data "aws_ami" "openvpnami" {   
+    most_recent      = true
+    owners           = ["679593333241"]
+    filter {
+        name   = "name"
+        values = ["OpenVPN Access Server Community Image-fe8020db-*"]
+    }
+
+    filter {
+        name   = "root-device-type"
+        values = ["ebs"]
+    }
+
+    filter {
+        name   = "virtualization-type"
+        values = ["hvm"]
+    }
+}
