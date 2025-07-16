@@ -1,5 +1,5 @@
 variable "project_name" {
-    default = "expense"
+    default = "mielleium"
 }
 
 variable "environment" {
@@ -7,11 +7,12 @@ variable "environment" {
 }
 
 variable "common_tags" {
-    default = {
-        Project = "expense"
-        Environment = "dev"
-        Terraform = "true"
-    }
+  default = {
+    project_name = "mielleium"
+    Environment  = "dev"
+    terraform    = true
+  }
+
 }
 
 variable "domain_name" {

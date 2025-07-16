@@ -3,7 +3,7 @@ module "mysql_sg" {
     project_name = var.project_name
     environment = var.environment
     sg_name = "mysql"
-    sg_description = "Created for MySQL instances in expense dev"
+    sg_description = "Created for MySQL instances in mielleium dev"
     vpc_id = data.aws_ssm_parameter.vpc_id.value
     common_tags = var.common_tags
 }
@@ -13,7 +13,7 @@ module "backend_sg" {
     project_name = var.project_name
     environment = var.environment
     sg_name = "backend"
-    sg_description = "Created for backend instances in expense dev"
+    sg_description = "Created for backend instances in mielleium dev"
     vpc_id = data.aws_ssm_parameter.vpc_id.value
     common_tags = var.common_tags
 }
@@ -23,7 +23,7 @@ module "frontend_sg" {
     project_name = var.project_name
     environment = var.environment
     sg_name = "frontend"
-    sg_description = "Created for frontend instances in expense dev"
+    sg_description = "Created for frontend instances in mielleium dev"
     vpc_id = data.aws_ssm_parameter.vpc_id.value
     common_tags = var.common_tags
 }
@@ -33,7 +33,7 @@ module "bastion_sg" {
     project_name = var.project_name
     environment = var.environment
     sg_name = "bastion"
-    sg_description = "Created for bastion instances in expense dev"
+    sg_description = "Created for bastion instances in mielleium dev"
     vpc_id = data.aws_ssm_parameter.vpc_id.value
     common_tags = var.common_tags
 }
@@ -44,7 +44,7 @@ module "vpn_sg" {
     project_name = var.project_name
     environment = var.environment
     sg_name = "vpn"
-    sg_description = "Created for VPN instances in expense dev"
+    sg_description = "Created for VPN instances in mielleium dev"
     vpc_id = data.aws_ssm_parameter.vpc_id.value
     common_tags = var.common_tags
 }
@@ -54,7 +54,7 @@ module "app_alb_sg" {
     project_name = var.project_name
     environment = var.environment
     sg_name = "app-alb"
-    sg_description = "Created for backend ALB in expense dev"
+    sg_description = "Created for backend ALB in mielleium dev"
     vpc_id = data.aws_ssm_parameter.vpc_id.value
     common_tags = var.common_tags
 }
@@ -64,7 +64,7 @@ module "web_alb_sg" {
     project_name = var.project_name
     environment = var.environment
     sg_name = "web-alb"
-    sg_description = "Created for frontend ALB in expense dev"
+    sg_description = "Created for frontend ALB in mielleium dev"
     vpc_id = data.aws_ssm_parameter.vpc_id.value
     common_tags = var.common_tags
 }

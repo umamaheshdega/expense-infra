@@ -1,6 +1,6 @@
 resource "aws_key_pair" "openvpnas" {
   key_name   = "openvpnas"
-  public_key = file("C:\\devops\\daws-82s\\openvpnas.pub")
+  public_key = file("C:\\terraform\\terraform\\openvpnas.pub")
 }
 
 resource "aws_instance" "openvpn" {

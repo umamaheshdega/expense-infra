@@ -1,5 +1,5 @@
 variable "project_name" {
-    default = "expense"
+    default = "mielleium"
 }
 
 variable "environment" {
@@ -7,17 +7,18 @@ variable "environment" {
 }
 
 variable "common_tags" {
-    default = {
-        Project = "expense"
-        Environment = "dev"
-        Terraform = "true"
-    }
+  default = {
+    project_name = "mielleium"
+    Environment  = "dev"
+    terraform    = true
+  }
+
 }
 
 variable "zone_id" {
-    default = "Z021448929NMXW4P65UQE"
+    default = "Z08214363QTM01YKTV3I6"
 }
 
 variable "domain_name" {
-    default = "daws82s.online"
+    default = "devops.online"
 }
